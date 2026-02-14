@@ -77,7 +77,6 @@ export const newtonBinomialRouter = createTRPCRouter({
         .mutation(async ({input}) => {
             try{
                 const {exponent} = input;
-                const coefficients: number[] = await asyncCalculateAllCoefficients(exponent);
                 return generateBinomialString(exponent);
             } catch (error) {
                 throw new TRPCError({code: 'INTERNAL_SERVER_ERROR', message: 'Failed to calculate binomial coefficients.', cause: error});

@@ -10,17 +10,17 @@ import { generateBinomialString } from './newton-binomial'
  */
 describe('Newton\'s Binomial Testing', () => {
 
-  test('Try (a+b)^2',  () => {
-    const result =   generateBinomialString(2)
+  test('Try (a+b)^2', () => {
+    const result = generateBinomialString(2)
     expect(result).toBe("x^2 + 2xy + y^2")
   })
 
-  test('Try (a+b)^0',  () => {
-    const result =   generateBinomialString(0)
+  test('Try (a+b)^0', () => {
+    const result = generateBinomialString(0)
     expect(result).toBe("1")
   });
 
-  test('Try (a+b)^-2',  () => {
+  test('Try (a+b)^-2', () => {
     expect(() => generateBinomialString(-2)).toThrow("L'esponente deve essere un numero intero non negativo.");
   });
 })
