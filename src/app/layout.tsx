@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Newton's Binomial Expansion",
-  description: "A web application that generates the binomial expansion of (a+b)^n using Newton's Binomial Theorem and Tartaglia's Triangle.",
+  description: "A web application that generates the binomial expansion of (a+b)^n using Newton's Binomial Theorem.",
 };
 
 export default function RootLayout({
